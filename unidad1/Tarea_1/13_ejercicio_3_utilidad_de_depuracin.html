@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.3.- Ejercicio 3: Utilidad de depuración | Tarea 1. Desarrollo WEB en Entorno Servidor </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Antonio Ladesa Jurado y José Luis Fernández" />
+<meta name="generator" content="eXeLearning 2.4.2 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tarea 1. Desarrollo WEB en Entorno Servidor</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tarea online</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_ejercicio_1_seleccin_de_nivel_y_sudoku_inicial.html" class="no-ch">1.1.- Ejercicio 1: Selección de nivel y sudoku inicial</a></li>
+      <li><a href="12_ejercicio_2_operaciones_iniciales.html" class="no-ch">1.2.- Ejercicio 2: Operaciones iniciales</a></li>
+      <li id="active"><a href="13_ejercicio_3_utilidad_de_depuracin.html" class="active no-ch">1.3.- Ejercicio 3: Utilidad de depuración</a></li>
+      <li><a href="14__ejercicio_4_ampliacin.html" class="no-ch">1.4 - Ejercicio 4: Ampliación</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="no-ch">2.- Información de interés</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="12_ejercicio_2_operaciones_iniciales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14__ejercicio_4_ampliacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.3.- Ejercicio 3: Utilidad de depuración</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_154" class="block iDevice_content">
+<div class="destacado">
+<p>Realizar un script llamado index3.php que ejecute una función que use las últimas 5 funciones requeridas y muestre la información que se muestra a continuación. Este script te servirá para depuerar errores en la generación de dichas funciones y puedes irlo creando a medida que vayas desarrollándolas. El objetivo es que no haya errores en el cálculo de cuadros y filas y columnas iniciales y finales.</p>
+<p>Para cada uno de las posibles celdas de un sudoku se mostrará la información referida a cada celda y su cuadro:</p>
+<p>fila,columna – cuadro (fila inicial, columna inicial) – (fila final, columna final)</p>
+<p><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">0,0 - 0 (0,0)-(2,2) | 0,1 - 0 (0,0)-(2,2) | 0,2 - 0 (0,0)-(2,2) | 0,3 - 1 (0,3)-(2,5) | 0,4 - 1 (0,3)-(2,5) | 0,5 - 1 (0,3)-(2,5) | 0,6 - 2 (0,6)-(2,8) | 0,7 - 2 (0,6)-(2,8) | 0,8 - 2 (0,6)-(2,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">1,0 - 0 (0,0)-(2,2) | 1,1 - 0 (0,0)-(2,2) | 1,2 - 0 (0,0)-(2,2) | 1,3 - 1 (0,3)-(2,5) | 1,4 - 1 (0,3)-(2,5) | 1,5 - 1 (0,3)-(2,5) | 1,6 - 2 (0,6)-(2,8) | 1,7 - 2 (0,6)-(2,8) | 1,8 - 2 (0,6)-(2,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">2,0 - 0 (0,0)-(2,2) | 2,1 - 0 (0,0)-(2,2) | 2,2 - 0 (0,0)-(2,2) | 2,3 - 1 (0,3)-(2,5) | 2,4 - 1 (0,3)-(2,5) | 2,5 - 1 (0,3)-(2,5) | 2,6 - 2 (0,6)-(2,8) | 2,7 - 2 (0,6)-(2,8) | 2,8 - 2 (0,6)-(2,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">3,0 - 3 (3,0)-(5,2) | 3,1 - 3 (3,0)-(5,2) | 3,2 - 3 (3,0)-(5,2) | 3,3 - 4 (3,3)-(5,5) | 3,4 - 4 (3,3)-(5,5) | 3,5 - 4 (3,3)-(5,5) | 3,6 - 5 (3,6)-(5,8) | 3,7 - 5 (3,6)-(5,8) | 3,8 - 5 (3,6)-(5,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">4,0 - 3 (3,0)-(5,2) | 4,1 - 3 (3,0)-(5,2) | 4,2 - 3 (3,0)-(5,2) | 4,3 - 4 (3,3)-(5,5) | 4,4 - 4 (3,3)-(5,5) | 4,5 - 4 (3,3)-(5,5) | 4,6 - 5 (3,6)-(5,8) | 4,7 - 5 (3,6)-(5,8) | 4,8 - 5 (3,6)-(5,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">5,0 - 3 (3,0)-(5,2) | 5,1 - 3 (3,0)-(5,2) | 5,2 - 3 (3,0)-(5,2) | 5,3 - 4 (3,3)-(5,5) | 5,4 - 4 (3,3)-(5,5) | 5,5 - 4 (3,3)-(5,5) | 5,6 - 5 (3,6)-(5,8) | 5,7 - 5 (3,6)-(5,8) | 5,8 - 5 (3,6)-(5,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">6,0 - 6 (6,0)-(8,2) | 6,1 - 6 (6,0)-(8,2) | 6,2 - 6 (6,0)-(8,2) | 6,3 - 7 (6,3)-(8,5) | 6,4 - 7 (6,3)-(8,5) | 6,5 - 7 (6,3)-(8,5) | 6,6 - 8 (6,6)-(8,8) | 6,7 - 8 (6,6)-(8,8) | 6,8 - 8 (6,6)-(8,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">7,0 - 6 (6,0)-(8,2) | 7,1 - 6 (6,0)-(8,2) | 7,2 - 6 (6,0)-(8,2) | 7,3 - 7 (6,3)-(8,5) | 7,4 - 7 (6,3)-(8,5) | 7,5 - 7 (6,3)-(8,5) | 7,6 - 8 (6,6)-(8,8) | 7,7 - 8 (6,6)-(8,8) | 7,8 - 8 (6,6)-(8,8) |</span><br /><span style="font-size: 8pt; font-family: 'times new roman', times, serif;">8,0 - 6 (6,0)-(8,2) | 8,1 - 6 (6,0)-(8,2) | 8,2 - 6 (6,0)-(8,2) | 8,3 - 7 (6,3)-(8,5) | 8,4 - 7 (6,3)-(8,5) | 8,5 - 7 (6,3)-(8,5) | 8,6 - 8 (6,6)-(8,8) | 8,7 - 8 (6,6)-(8,8) | 8,8 - 8 (6,6)-(8,8) |</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id22">
+<div class="iDevice emphasis_debesconocerfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Debes conocer</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_129" class="block iDevice_content">
+<p>A la hora de incluir scripts debes distinguir entre los distintos métodos para ello:</p>
+<ul>
+<li><a href="https://www.php.net/manual/es/function.include.php">include</a></li>
+<li><a href="https://www.php.net/manual/es/function.include-once.php">include_once</a></li>
+<li><a href="https://www.php.net/manual/es/function.require.php">require</a></li>
+<li><a href="https://www.php.net/manual/es/function.require-once.php">require_once</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="12_ejercicio_2_operaciones_iniciales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="14__ejercicio_4_ampliacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,26 @@
+
+table {
+  margin: 50px;
+   border-collapse: collapse;
+   text-align: center;
+   table-layout: fixed;
+}
+td:nth-child(2){
+
+
+  width: 500px;
+ 
+}
+tr td{
+   font-size: 1.2em;
+   margin: 0px;
+   width: 5%;
+   border: 2px solid #000;
+   border-collapse: collapse;
+   padding: 25px;
+   
+}
+
+.sub{
+  border: medium transparent;
+}

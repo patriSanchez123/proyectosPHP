@@ -1,0 +1,19 @@
+
+table {
+   margin-left: 200px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 1000px;
+ }
+ tr td{
+    font-size: 1.2em;
+
+    margin: 0px;
+    width: 5%;
+    border: 2px solid #000;
+    border-collapse: collapse;
+ }
+ .sub{
+   border: medium transparent;
+ }
+ 

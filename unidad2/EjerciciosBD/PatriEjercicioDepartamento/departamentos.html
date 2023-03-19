@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamentos- Operacipnes CRUD</title>
+</head>
+<style>
+    .mainContainer{
+margin: auto;
+
+    }
+    .registrosContainer{
+    border-right: solid 1px black;
+    display: inline-block;
+    margin: 1rem;
+
+        
+    }
+    .updateContainer{
+        margin: 1rem;
+        display: inline-block;
+
+
+    }
+</style>
+<body>
+    <div class="mainContainer">
+        <h1>Departamentos</h1>
+        <form action="./departamentos.php" method="post">
+        <div class="addContainer">
+
+        <input type="submit" value="+"name="addButoon"><input type="text" value="" placeholder="Nombre nuevo departamento" name="new_departament_name">
+        </div>
+        <div class="registrosContainer">
+        <input type="submit" value="x" name="delete_001"><input type="text" value="Marketing" name="name_001"><br>
+        <input type="submit" value="x" name="delete_002"><input type="text" value="Sales" name="name_002"><br>
+        </div>
+        <div class="updateContainer">
+        <input type="submit" value="Actualizar Registros" name="updateButoon">
+        </div>
+    
+    
+    </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2.- Ejercicio 2: Operaciones iniciales | Tarea 1. Desarrollo WEB en Entorno Servidor </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Antonio Ladesa Jurado y José Luis Fernández" />
+<meta name="generator" content="eXeLearning 2.4.2 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tarea 1. Desarrollo WEB en Entorno Servidor</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tarea online</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li><a href="11_ejercicio_1_seleccin_de_nivel_y_sudoku_inicial.html" class="no-ch">1.1.- Ejercicio 1: Selección de nivel y sudoku inicial</a></li>
+      <li id="active"><a href="12_ejercicio_2_operaciones_iniciales.html" class="active no-ch">1.2.- Ejercicio 2: Operaciones iniciales</a></li>
+      <li><a href="13_ejercicio_3_utilidad_de_depuracin.html" class="no-ch">1.3.- Ejercicio 3: Utilidad de depuración</a></li>
+      <li><a href="14__ejercicio_4_ampliacin.html" class="no-ch">1.4 - Ejercicio 4: Ampliación</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="no-ch">2.- Información de interés</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="11_ejercicio_1_seleccin_de_nivel_y_sudoku_inicial.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="13_ejercicio_3_utilidad_de_depuracin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.2.- Ejercicio 2: Operaciones iniciales</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_154" class="block iDevice_content">
+<p>Realizar un script llamado index2.php partiendo del código de index1.php pero que envíe los datos a otro script añadiendo la siguiente funcionalidad:</p>
+<ol style="list-style-type: lower-alpha;">
+<li><br />Permitir al usuario introducir un número, fila y columna para realizar distintas operaciones.<br />El número a introducir debe estar comprendido entre 1 y 9. Las filas y columnas que introduzca el usuario también estarán comprendidas entre 1 y 9 aunque internamente el programa debe manejar índices de 0 a 8.</li>
+<li><br />Permitir al usuario introducir un número en una celda, usando los controles de número, fila y columna y un botón. No puede introducirse un número en una celda que contenga un número inicial.</li>
+<li><br />Permitir al usuario eliminar un número de una celda, usando los controles de fila y columna y un botón. No puede eliminarse un número de una celda que contenga un número inicial.</li>
+<li><br />Mostrar al usuario los números candidatos a introducir en una celda, usando los controles de fila y columna y un botón. No pueden mostrarse candidatos de una celda que contenga un número inicial. Los candidatos a introducir en una celda son aquellos números que no están ni en la fila, ni en la columna ni en el cuadro de esa celda.</li>
+</ol>
+<p>La pantalla debe ser similar a ésta:</p>
+<p><img src="sudoku_operaciones_iniciales.PNG" alt="Sudoku operaciones iniciales" title="Sudoku operaciones iniciales" width="603" height="860" /></p>
+<p>Tras realizar la operación, deben mantenerse los números introducidos. A continuación se muestra el resultado de las tres operaciones</p>
+<table border="1" style="width: 100%; height: 373px;">
+<tbody>
+<tr style="height: 373px;">
+<td style="width: 33.3333%; height: 373px; text-align: center; vertical-align: top;"><img src="sudoku_insertar.PNG" alt="Insertar número" title="Insertar número" width="250" height="351" /></td>
+<td style="width: 33.3333%; height: 373px; text-align: center; vertical-align: top;"><img src="sudoku_eliminar.PNG" alt="Eliminar número" title="Eliminar número" width="260" height="368" /></td>
+<td style="width: 33.3333%; height: 373px; text-align: center; vertical-align: top;"><img src="sudoku_candidatos.PNG" alt="Mostrar candidatos" title="Mostrar candidatos" width="260" height="366" /></td>
+</tr>
+</tbody>
+</table>
+<p>A tener en cuenta:</p>
+<p>Para la realización de la funcionalidad requerida, deberán usarse dos tableros, el inicial y el actual del juego para poder discriminar entre celdas que contienen números iniciales y números introducidos durante el juego, que deben transmitirse vía POST.</p>
+<p>Deben añadirse al fichero que contiene las funciones, las siguientes, con los argumentos que requieran:</p>
+<ul>
+<li>Mostrar tablero de juego. Debe mostrar el array tablero del juego discriminando por color entre números iniciales y añadidos.</li>
+<li>Insertar número. Insertará en el array del juego un número en la posición que el usuario haya elegido. Si es una celda inicial NO se insertará el número.</li>
+<li>Eliminar número. Eliminará del array del juego el número que está en la posición que el usuario haya elegido. Si es una celda inicial NO se eliminará el número el número.</li>
+<li>Comprobar si un número está en una fila. Dado un número y un índice a una fila, comprobará si dicho número aparece en la fila.</li>
+<li>Comprobar si un número está en una columna. Dado un número y un índice a una columna, comprobará si dicho número aparece en la columna.</li>
+<li>Calcular cuadro. Dada una fila y columna, debe devolver el cuadro al que pertenece. Los cuadros se numeran de la siguiente forma:</li>
+</ul>
+<p style="padding-left: 120px;">0 para las celdas 0,0 a 2,2<br />1 para las celdas 0,3 a 2,5<br />2 para las celdas 0,6 a 2,8<br />3 para las celdas 3,0 a 5,2<br />…<br />8 para las celdas 6,6 a 8,8</p>
+<ul>
+<li>Calcular fila inicial de un cuadro. Dado un índice a un cuadro, calcula la fila de su primera celda.</li>
+<li>Calcular fila final de un cuadro. Dado un índice a un cuadro, calcula la fila de su última celda.</li>
+<li>Calcular columna inicial de un cuadro. Dado un índice a un cuadro, calcula la columna de su primera celda.</li>
+<li>Calcular columna final de un cuadro. Dado un índice a un cuadro, calcula la fila de su última celda.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id20">
+<div class="iDevice emphasis_debesconocerfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Debes conocer</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta20_129" class="block iDevice_content">
+<p>Los controles para la introducción de números deben ser input de tipo number</p>
+<p>Aunque existen fórmulas para calcular un cuadro dadas las coordenadas de una celda, se usarán estructuras de control de tipo if.</p>
+<p>También existen fórmulas para calcular las filas y columnas iniciales y finales de un cuadro. En este caso debes usar para el desarrollo de dichas funcioness estructuras de control de tipo switch. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="11_ejercicio_1_seleccin_de_nivel_y_sudoku_inicial.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="13_ejercicio_3_utilidad_de_depuracin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.- Ejercicio 1: Selección de nivel y sudoku inicial | Tarea 1. Desarrollo WEB en Entorno Servidor </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Antonio Ladesa Jurado y José Luis Fernández" />
+<meta name="generator" content="eXeLearning 2.4.2 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tarea 1. Desarrollo WEB en Entorno Servidor</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tarea online</a></li>
+   <li class="current-page-parent"><a href="1_descripcin_de_la_tarea.html" class="current-page-parent daddy">1.- Descripción de la tarea</a>
+   <ul>
+      <li id="active"><a href="11_ejercicio_1_seleccin_de_nivel_y_sudoku_inicial.html" class="active no-ch">1.1.- Ejercicio 1: Selección de nivel y sudoku inicial</a></li>
+      <li><a href="12_ejercicio_2_operaciones_iniciales.html" class="no-ch">1.2.- Ejercicio 2: Operaciones iniciales</a></li>
+      <li><a href="13_ejercicio_3_utilidad_de_depuracin.html" class="no-ch">1.3.- Ejercicio 3: Utilidad de depuración</a></li>
+      <li><a href="14__ejercicio_4_ampliacin.html" class="no-ch">1.4 - Ejercicio 4: Ampliación</a></li>
+   </ul>
+   </li>
+   <li><a href="2_informacin_de_inters.html" class="no-ch">2.- Información de interés</a></li>
+   <li><a href="anexo_licencia_de_recursos.html" class="no-ch">Anexo. Licencia de recursos</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="1_descripcin_de_la_tarea.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_ejercicio_2_operaciones_iniciales.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.1.- Ejercicio 1: Selección de nivel y sudoku inicial</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id13">
+<div class="iDevice emphasis0">
+<div id="ta13_154" class="block iDevice_content">
+<p>Realizar un fichero php donde se definan tres arrays de 9x9 elementos enteros, para almacenar los siguientes 3 sudokus iniciales de tres niveles de dificultad distintos:</p>
+<p><img src="sudokusiniciales.PNG" alt="Sudokus iniciales" title="Sudokus iniciales" width="824" height="241" /></p>
+<p>Los lugares en los que no haya un número, tendrán un valor igual a cero. El resto de valores estarán comprendidos entre 1 y 9. </p>
+<p>b) Realizar un script php, llamado index1.php que incluya el archivo anterior y que permita al usuario visualizar los tres sudokus iniciales y seleccionar, mediante un formulario, uno de los tres según su dificultad. La dificultad del sudoku será:</p>
+<ul>
+<li>Fácil para el primero (valor seleccionado por defecto)</li>
+<li>Medio para el segundo</li>
+<li>Difícil para el tercero</li>
+</ul>
+<p>La página tendrá un aspecto similar a éste:</p>
+<p><img src="seleccion_sudoku.PNG" alt="Selección de sudokus" title="Selección de sudokus" width="801" height="296" /></p>
+<p>Una vez que el usuario haya seleccionado el nivel de dificultad y pulse el botón elegir se enviarán mediante POST el sudoku elegido y el nivel de dificultad y se mostrarán en otro script php. </p>
+<p>El resultado será una página similar a ésta:</p>
+<p><img src="sudoku_elegido.PNG" alt="Sudoku elegido" title="Sudoku elegido" width="611" height="535" /></p>
+<p>A tener en cuenta:</p>
+<p>Para la realización de los anteriores scripts hay que desarrollar otro archivo php que contenga una función necesaria para el desarrollo:</p>
+<ul>
+<li>Mostrar un tablero inicial, que se llamará tres veces en el primer script y una en el segundo.</li>
+</ul>
+<p><br />En el ejemplo se ha mostrado un punto en las celdas en las que no hay número inicial (es decir 0).</p>
+<p><br />También debe realizarse un archivo css para dotar de estilo a las páginas generadas (bordes, colores, etc.)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id19">
+<div class="iDevice emphasis_debesconocerfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Debes conocer</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_129" class="block iDevice_content">
+<p>En el segundo script, el sudoku inicial NO se incluye, sino que se envía por POST.</p>
+<p>Para enviar variables mediante POST a otro script, se puede usar un input oculto mandando el valor. En este caso, al tratarse de una estructura más compleja (un array de dos dimensiones) hay que hacer las operaciones de codificación y serialización:</p>
+<p>En el script de envío, codificar y serializar el array y enviar el resultado. Ejemplo:</p>
+<p>$arrayCodificado = base64_encode(serialize($miArray));</p>
+<p><br />En el script de recepción, decodificar y de-serilizar el dato recibido mediante POST. Ejemplo:</p>
+<p>$miArray = unserialize(base64_decode($arrayCodificado));</p>
+<p>No pueden usarse sesiones, ya que no está aún descrito este concepto en la unidad 1.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="1_descripcin_de_la_tarea.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_ejercicio_2_operaciones_iniciales.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,43 @@
+.datosCliente{
+margin-top: 50px;
+text-align: center;
+
+}
+.datosCliente input{
+    margin-bottom: 20px;
+    width: 250px;
+    border: solid;
+    border-radius: 60px;
+
+}
+
+
+.cliente{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+   
+ 
+}
+.cliente h2{
+
+    font-size: 2.5em;
+}
+
+.cliente img{
+
+    width: 500px;
+    border: solid;
+    border-radius: 60px;
+    
+}
+
+.edicion{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.edicion input{
+
+    font-size: 1.5em;
+}

@@ -1,0 +1,1 @@
+INSERT INTO `pokemons` (`id_pokemon`, `nombre`, `tipo`, `url_imagen`, `descripcion`) VALUES (NULL, 'pikachu', 1, 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png', 'Una descripción de pikachu');
